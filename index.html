@@ -1,0 +1,195 @@
+<html>
+   <head>
+      <title>Bootstrap CDN Simple Example</title>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link href="/static/css/style.css" rel="stylesheet">
+   <body>
+      <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <div class="pos-f-t">
+         <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-inverse p-4">
+               <h4 class="text-white">Nifty 50</h4>
+               <span class="text-muted">Below are the top nifty 50 gainers list.</span>
+            </div>
+         </div>
+         <nav class="navbar navbar-inverse bg-inverse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+         </nav>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="card-columns top-padding">
+               <div class="card">
+                  <img class="card-img-top img-fluid" src="https://fthmb.tqn.com/RjsE0s9dONX5SDmETI0vF_uOkR8=/768x0/filters:no_upscale()/about/stock-market-investing-in-stocks-57a25d785f9b589aa932fa0a.jpg" alt="Card image cap">
+                  <div class="card-block">
+                     <h4 class="card-title"> 1 {top_gainers[0][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[0][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[0][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[0][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[0][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[0][openPrice]}</br>
+                        <b>High </b>{top_gainers[0][highPrice]}</br>
+                        <b>Low </b>{top_gainers[0][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[0][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[0][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[0][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card p-3">
+                  <blockquote class="card-block card-blockquote">
+                     <h4 class="card-title">2 {top_gainers[1][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[1][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[1][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[1][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[1][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[1][openPrice]}</br>
+                        <b>High </b>{top_gainers[1][highPrice]}</br>
+                        <b>Low </b>{top_gainers[1][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[1][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[1][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[1][series]}</br>
+                     </p>
+                  </blockquote>
+               </div>
+               <div class="card">
+                  <img class="card-img-top img-fluid" src="https://cdn.andertoons.com/img/toons/cartoon1403.png" alt="Card image cap">
+                  <div class="card-block">
+                     <h1>3 {top_gainers[2][symbol]}</h1>
+                     <p class="card-text"><b>LTP </b>{top_gainers[2][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[2][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[2][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[2][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[2][openPrice]}</br>
+                        <b>High </b>{top_gainers[2][highPrice]}</br>
+                        <b>Low </b>{top_gainers[2][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[2][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[2][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[2][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card text-center">
+                  <div class="card-block">
+                     <h4 class="card-title">4 {top_gainers[3][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[3][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[3][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[3][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[3][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[3][openPrice]}</br>
+                        <b>High </b>{top_gainers[3][highPrice]}</br>
+                        <b>Low </b>{top_gainers[3][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[3][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[3][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[3][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card p-3 text-right">
+                  <blockquote class="card-blockquote">
+                     <h4>5 {top_gainers[4][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[4][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[4][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[4][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[4][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[4][openPrice]}</br>
+                        <b>High </b>{top_gainers[4][highPrice]}</br>
+                        <b>Low </b>{top_gainers[4][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[4][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[4][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[4][series]}</br>
+                     </p>
+                  </blockquote>
+               </div>
+               <div class="card">
+                  <div class="card-block">
+                     <h4 class="card-title">6 {top_gainers[5][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[5][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[5][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[5][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[5][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[5][openPrice]}</br>
+                        <b>High </b>{top_gainers[5][highPrice]}</br>
+                        <b>Low </b>{top_gainers[5][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[5][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[5][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[5][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="card-img-top img-fluid" src="https://intloveincorporated.blob.core.windows.net/contentimages/main/stock-market-screen.jpg" alt="Card image cap">
+                  <div class="card-block">
+                     <h4 class="card-title">7 {top_gainers[6][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[6][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[6][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[6][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[6][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[6][openPrice]}</br>
+                        <b>High </b>{top_gainers[6][highPrice]}</br>
+                        <b>Low </b>{top_gainers[6][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[6][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[6][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[6][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="card-img-top img-fluid" src="http://tpn134.com/res/global/img/stocks.png" alt="Card image cap">
+                  <div class="card-block">
+                     <h4 class="card-title">8 {top_gainers[7][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[7][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[7][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[7][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[7][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[7][openPrice]}</br>
+                        <b>High </b>{top_gainers[7][highPrice]}</br>
+                        <b>Low </b>{top_gainers[7][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[7][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[7][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[7][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img class="card-img-top img-fluid" src="http://img.etimg.com/thumb/msid-49456544,width-310,resizemode-4/stocks-to-watch-tata-motors-bharti-infratel.jpg" alt="Card image cap">
+                  <div class="card-block">
+                     <h1>9 {top_gainers[8][symbol]}</h1>
+                     <p class="card-text"><b>LTP </b>{top_gainers[8][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[8][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[8][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[8][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[8][openPrice]}</br>
+                        <b>High </b>{top_gainers[8][highPrice]}</br>
+                        <b>Low </b>{top_gainers[8][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[8][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[8][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[8][series]}</br>
+                     </p>
+                  </div>
+               </div>
+               <div class="card text-center">
+                  <div class="card-block">
+                     <h4 class="card-title">10 {top_gainers[9][symbol]}</h4>
+                     <p class="card-text"><b>LTP </b>{top_gainers[9][ltp]}<br>
+                        <b>Netprice </b>{top_gainers[9][netPrice]}<br>
+                        <b>Traded Quality </b>{top_gainers[9][tradedQuantity]}</br>
+                        <b>Value (lakhs) </b>{top_gainers[9][turnoverInLakhs]}</br>
+                        <b>Open </b>{top_gainers[9][openPrice]}</br>
+                        <b>High </b>{top_gainers[9][highPrice]}</br>
+                        <b>Low </b>{top_gainers[9][lowPrice]}</br>
+                        <b>previousPrice </b>{top_gainers[9][previousPrice]}</br>
+                        <b>Latest Ex Date </b>{top_gainers[9][lastCorpAnnouncement]}</br>
+                        <b>CA </b>{top_gainers[9][series]}</br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
