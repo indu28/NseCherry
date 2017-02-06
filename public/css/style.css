@@ -1,0 +1,16 @@
+p {
+	font-size: 14px;
+	font-weight: 200;
+	color:#008080;
+}
+
+b {
+	font-size: 12px;
+	font-weight: 900;
+	color:black;
+}
+
+.card-columns.top-padding {
+    padding-top: 20px;
+}
+
