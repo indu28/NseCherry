@@ -10,7 +10,7 @@ import json
 
 nse = Nse()
 top_gainers = nse.get_top_gainers()
-r = redis.Redis(host='localhost', port=6379, db=0, password='newpass')
+r = redis.Redis(host='localhost', port=6379, db=0, password='yourpassword')
 json_gainers = json.dumps(top_gainers)
 r.set('top_gainers', json_gainers)
 unpacked_gainers = json.loads(r.get('top_gainers'))
@@ -22,7 +22,7 @@ class CherryNse(object):
         index = open("index.html").read().format(top_gainers=top_gainers)
         return index
 
-
+cherrypy.config.update({'server.socket_host': '0.0.0.0'})
 if __name__ == '__main__':
     conf = {
         '/': {
