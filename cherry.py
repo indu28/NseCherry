@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
-import cherrypy
 import os
+import cherrypy
 from nsetools import Nse
 import redis
 import json
-import cherrys
 
 #accesing nifty top 50 gainers list
 
